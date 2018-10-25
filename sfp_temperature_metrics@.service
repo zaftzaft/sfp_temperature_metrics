@@ -1,0 +1,9 @@
+[Unit]
+Description=sfp_temperature_metrics %i
+
+[Service]
+Type=simple
+ExecStart=/bin/bash /opt/sfp_temperature_metrics.sh %i
+
+[Install]
+WantedBy=default.target
